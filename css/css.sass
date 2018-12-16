@@ -1,0 +1,394 @@
+$link_hover: #fd6764
+    
+body
+    margin: 0 !important
+
+.container-fluid
+    padding: 0 !important
+
+.header-menu
+    position: fixed
+    z-index: 100
+    width: 100%
+    min-height: 76px
+    background-color: rgba(25, 38,52, 0.8)
+    @media (max-width: 768px)
+        position: relative
+    a
+        color: white
+        text-decoration: none
+        text-transform: uppercase
+
+.bars
+    display: flex
+    align-items: center
+    padding: 20px
+    height: 100%
+    font-size: 1.7em
+    border-right: 1px solid #545962
+    a
+        transition: 0.3s all ease
+        &:hover
+            color: $link_hover
+
+.logo
+    height: 100%
+    padding: 20px
+    border-right: 1px solid #545962
+    font-size: 1.7em
+    display: flex
+    align-items: center
+    font-family: 'Poppins'
+    font-weight: bold
+    a
+        transition: 0.3s all ease
+        &:hover
+            transform: scale(1.2)
+
+.main-menu
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    height: 100%
+    font-family: 'Montserrat'
+    a
+        transition: 0.3s all ease
+        display: block
+        padding: 10px
+        &:hover
+            color: $link_hover
+
+.socials
+    display: flex
+    align-items: center
+    margin-left: auto
+    height: 100%
+    font-size: 1.5em
+    padding: 10px
+    a
+        padding: 10px
+        transition: 0.3s all ease
+        &:hover
+            color: $link_hover
+
+.cart, .search
+    display: flex
+    align-items: center
+    font-size: 1.5em
+    height: 100%
+    border-left: 1px solid #545962
+    padding: 10px
+    a
+        padding: 10px
+        transition: 0.3s all ease
+        &:hover
+            color: $link_hover
+
+.header_image
+    display: flex
+    position: relative
+    width: 100%
+    display: flex
+    align-items: center
+    img
+        vertical-align: middle
+        border-style: none
+        height: auto
+        width: 100%
+    &__slogan
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        position: absolute
+        color: white
+        text-align: center
+        margin-left: 10%
+        h1
+            margin: 0
+            line-height: 0.8
+            text-transform: uppercase
+            font-family: 'Poppins'
+            font-weight: bold
+        p
+            font-family: 'Montserrat'
+            margin: 0
+            text-transform: uppercase
+.btn
+    font-family: 'Montserrat'
+    text-decoration: none
+    display: block
+    border-radius: 30px
+    color: white
+    padding: 10px 20px
+    text-transform: uppercase
+    margin-top: 20px
+    transition: 0.3s all ease
+    &_blue
+        background-color: #3954d9
+        &:hover
+            background-color: #65cbff
+
+.content
+    width: 100%
+    position: relative
+    margin-top: -50px
+    box-shadow: 0 0 50px rgba(0,0,0,0.5) !important
+    z-index: 50
+    background-color: white
+    @media (max-width: 768px)
+        margin-top: 0
+
+.info-block
+    text-align: center
+    box-sizing: border-box
+    border: 1px solid lighten(#c7c7c7, 10%)
+    background-color: white
+    padding: 30px 30px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    font-family: 'Montserrat'
+    i
+        color: #5c5c5c
+        font-size: 2em
+    h3
+        text-transform: uppercase
+        font-weight: bold
+        font-size: 1.3em
+        font-family: 'Poppins'
+        color: #0d2e57
+    p
+        color: #a1a1a1
+        font-size: 0.9em
+    a
+        color: #3753da
+        font-weight: bold
+        text-decoration: none
+        &:hover
+            text-decoration: underline
+
+.offer
+    &_left
+        background-color: #f2f0f0
+        padding: 20px 40px
+        &__text
+            p
+                font-family: 'Montserrat'
+                text-align: center
+                color: #8a8a8a
+                &:first-child
+                    font-family: 'Poppins'
+                    text-transform: uppercase
+                    text-align: center
+                    color: #616161
+                    font-size: 1.2em
+            h2
+                font-family: 'Ubuntu Condensed', sans-serif
+                text-align: center
+                color: #0d2e57
+                text-transform: uppercase
+                font-size: 1.7em
+        &__price
+            width: 45%
+            margin: auto
+            display: flex
+            justify-content: space-between
+            align-items: center
+            font-family: 'Montserrat'
+            p
+                color: #3954d9
+                font-weight: bold
+                font-size: 2.5em
+                &:last-child
+                    font-size: 1.8em
+                    color: #121212
+        &__timer
+            display: flex
+            justify-content: center
+            &-block
+                font-family: 'Montserrat'
+                background-color: white
+                text-align: center
+                margin-right: 20px
+                padding: 10px
+                border-radius: 15px
+                width: 90px
+                height: 105px
+                &:last-child
+                    margin-right: 0
+                p
+                    margin: 0
+                    font-weight: bold
+                    color: #2d2b27
+                    &:first-child
+                        font-size: 2em
+        &__button
+            width: 140px
+            margin: auto
+            text-align: center
+    &_right
+        padding: 0
+        img
+            width: 100%
+
+.goods_block
+    padding: 20px
+    border: 1px solid lighten(#c7c7c7, 10%)
+    display: flex
+    flex-direction: column
+    justify-content: center
+    img
+        width: 100%
+    h4
+        font-family: 'Ubuntu Condensed', sans-serif
+        text-align: left
+        color: #0d2e57
+        text-transform: uppercase
+        font-size: 1.3em
+        margin: 0
+    &__price
+        display: flex
+        color: #a6a6a6
+        p
+            font-family: 'Montserrat'
+            font-weight: bold
+            &:first-child
+                margin-right: 10px
+                color: #3753da
+    &_special1
+        background-color: #232323
+        color: white
+        display: flex
+        flex-direction: column
+        justify-content: center
+        padding: 20px
+        h5
+            font-family: 'Ubuntu Condensed', sans-serif
+            text-transform: uppercase
+            font-size: 2em
+            margin: 0
+        p
+            font-family: 'Montserrat'
+        a
+            display: block
+            width: 150px
+            text-align: center
+    &_special2
+        background: url('../img/Layer 6.png') center center no-repeat
+        background-size: 100%
+        color: white
+        display: flex
+        flex-direction: column
+        justify-content: center
+        padding: 20px 40px
+        h5
+            width: 50%
+            font-family: 'Ubuntu Condensed', sans-serif
+            text-transform: uppercase
+            font-size: 3em
+            margin: 0
+            font-style: italic
+        p
+            font-family: 'Montserrat'
+        a
+            display: block
+            width: 150px
+            text-align: center
+.more
+    text-align: center
+    padding: 20px
+    a
+        text-transform: uppercase
+        text-decoration: none
+        font-family: 'Montserrat'
+        font-weight: bold
+        color: #3753da
+        &:hover
+            text-decoration: underline
+
+.galery_block
+    padding: 0
+    margin: 0
+    img
+        width: 100%
+        height: 100%
+
+.brand
+    padding: 30px
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+        width: 60%
+
+.footer
+    // position: relative
+    margin-top: -50px
+    background: url('../img/Footer.png') center center no-repeat
+    background-size: 100% 100%
+    z-index: 10
+    font-family: 'Montserrat'
+    &_block
+        padding-top: 70px
+    &_list
+        display: flex
+        justify-content: space-between
+        &__block
+            h4
+                font-size: 1.5em
+                color: #3650ce
+                text-transform: uppercase
+                font-weight: normal
+                font-size: 1.1em
+            ul
+                padding: 0
+                list-style: none
+            li
+                a
+                    color: white
+                    font-size: 0.8em
+                    font-weight: normal
+                    text-decoration: none
+                    &:hover
+                        text-decoration: underline
+            input
+                background-color: #2f2f2f
+                color: white
+                border: none
+                height: 30px
+                border-radius: 15px
+                font-size: 1em
+                padding-left: 15px
+    &_btn
+        text-align: center
+        display: block
+        width: 150px
+        margin-bottom: 20px
+
+    &_list-2
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+
+    &_socials
+        display: flex
+        a
+            text-decoration: none
+            border-radius: 50%
+            margin-right: 10px
+            display: flex
+            justify-content: center
+            align-items: center
+            font-size: 1.4em
+            width: 43px
+            height: 43px
+            color: #232323
+            background-color: white
+    &_bottom
+        border-top: 1px solid #535353
+        color: #535353
+        font-size: 0.8em
+
+
