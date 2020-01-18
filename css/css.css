@@ -301,7 +301,7 @@ body {
   color: #3954d9;
   font-weight: bold;
   font-size: 2.5em;
-  margin: 10%;
+  margin: 10px;
 }
 .offer_left__price p:last-child {
   font-size: 1.8em;
